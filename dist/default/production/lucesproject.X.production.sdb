@@ -1,0 +1,505 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\adc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"21
+[v _ADC_Read ADC_Read `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\strcat.c
+[v _strcat strcat `(*.5uc  1 e 1 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"35 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\elnewmain.c
+[v _PWM_Inicializar PWM_Inicializar `(i  1 e 2 0 ]
+"42
+[v _PWM_Duty PWM_Duty `(i  1 e 2 0 ]
+"54
+[v _PWM_Inicializar2 PWM_Inicializar2 `(i  1 e 2 0 ]
+"61
+[v _PWM_Duty2 PWM_Duty2 `(i  1 e 2 0 ]
+"74
+[v _main main `(v  1 e 1 0 ]
+"38 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\LCD.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"62
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"91
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+"106
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+"116
+[v _LCD_String_xy LCD_String_xy `(v  1 e 1 0 ]
+"147
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"5 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\uart.c
+[v _USART_Init USART_Init `(v  1 e 1 0 ]
+"16
+[v _USART_TxChar USART_TxChar `(v  1 e 1 0 ]
+"37
+[v _USART_SendString USART_SendString `(v  1 e 1 0 ]
+"353 C:/Users/Usuario/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S242 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"370
+[u S251 . 1 `S242 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES251  1 e 1 @8 ]
+"928
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1039
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+[s S297 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1069
+[s S306 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S310 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S313 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S316 . 1 `S297 1 . 1 0 `S306 1 . 1 0 `S310 1 . 1 0 `S313 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES316  1 e 1 @24 ]
+"1134
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1141
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1155
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1239
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1246
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S174 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1277
+[s S179 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S188 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S191 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S194 . 1 `S174 1 . 1 0 `S179 1 . 1 0 `S188 1 . 1 0 `S191 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES194  1 e 1 @31 ]
+"1479
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1541
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"1863
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"2042
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2557
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+"2643
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2971
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S154 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2992
+[u S160 . 1 `S154 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES160  1 e 1 @159 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3595
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"3787
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"3790
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"3811
+[v _CCP2M2 CCP2M2 `VEb  1 e 0 @234 ]
+"3814
+[v _CCP2M3 CCP2M3 `VEb  1 e 0 @235 ]
+"3841
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"3853
+[v _DC1B0 DC1B0 `VEb  1 e 0 @188 ]
+"3856
+[v _DC1B1 DC1B1 `VEb  1 e 0 @189 ]
+"3859
+[v _DC2B0 DC2B0 `VEb  1 e 0 @236 ]
+"3862
+[v _DC2B1 DC2B1 `VEb  1 e 0 @237 ]
+"3904
+[v _GO GO `VEb  1 e 0 @249 ]
+"4180
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"4357
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"4360
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"4390
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"4405
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"4408
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
+"4411
+[v _TRISA2 TRISA2 `VEb  1 e 0 @1066 ]
+"4435
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"4459
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"4471
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"4474
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"4549
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"358 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"21 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\elnewmain.c
+[v _luz luz `[4]uc  1 e 4 0 ]
+"22
+[v _sensorSalida1 sensorSalida1 `[3]uc  1 e 3 0 ]
+"23
+[v _sensorSalida2 sensorSalida2 `[3]uc  1 e 3 0 ]
+"26
+[v _sensorLuz sensorLuz `l  1 e 4 0 ]
+"27
+[v _pwmFrecuencia pwmFrecuencia `l  1 e 4 0 ]
+"28
+[v _bloque1 bloque1 `l  1 e 4 0 ]
+"29
+[v _bloque2 bloque2 `l  1 e 4 0 ]
+"30
+[v _stringBT stringBT `[50]uc  1 e 50 0 ]
+"74
+[v _main main `(v  1 e 1 0 ]
+{
+"156
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+{
+[v strcpy@to to `*.5uc  1 a 1 wreg ]
+"15
+[v strcpy@cp cp `*.5uc  1 a 1 3 ]
+"8
+[v strcpy@to to `*.5uc  1 a 1 wreg ]
+[v strcpy@from from `*.4DCuc  1 p 1 0 ]
+"18
+[v strcpy@to to `*.5uc  1 a 1 2 ]
+"24
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\strcat.c
+[v _strcat strcat `(*.5uc  1 e 1 0 ]
+{
+[v strcat@to to `*.5uc  1 a 1 wreg ]
+"15
+[v strcat@cp cp `*.5uc  1 a 1 2 ]
+"8
+[v strcat@to to `*.5uc  1 a 1 wreg ]
+[v strcat@from from `*.24DCuc  1 p 1 0 ]
+"18
+[v strcat@to to `*.5uc  1 a 1 3 ]
+"26
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 9 ]
+"512
+[v sprintf@c c `uc  1 a 1 12 ]
+"521
+[v sprintf@prec prec `c  1 a 1 8 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"37 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\uart.c
+[v _USART_SendString USART_SendString `(v  1 e 1 0 ]
+{
+[v USART_SendString@out out `*.26DCuc  1 p 2 1 ]
+"44
+} 0
+"16
+[v _USART_TxChar USART_TxChar `(v  1 e 1 0 ]
+{
+[v USART_TxChar@out out `uc  1 a 1 wreg ]
+[v USART_TxChar@out out `uc  1 a 1 wreg ]
+[v USART_TxChar@out out `uc  1 a 1 0 ]
+"21
+} 0
+"5
+[v _USART_Init USART_Init `(v  1 e 1 0 ]
+{
+[v USART_Init@baud_rate baud_rate `l  1 p 4 6 ]
+"13
+} 0
+"54 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\elnewmain.c
+[v _PWM_Inicializar2 PWM_Inicializar2 `(i  1 e 2 0 ]
+{
+"60
+} 0
+"35
+[v _PWM_Inicializar PWM_Inicializar `(i  1 e 2 0 ]
+{
+"41
+} 0
+"61
+[v _PWM_Duty2 PWM_Duty2 `(i  1 e 2 0 ]
+{
+[v PWM_Duty2@duty duty `ui  1 p 2 0 ]
+"70
+} 0
+"42
+[v _PWM_Duty PWM_Duty `(i  1 e 2 0 ]
+{
+[v PWM_Duty@duty duty `ui  1 p 2 0 ]
+"51
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 12 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 11 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 6 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 10 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 78 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 77 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 68 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S681 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S686 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S689 . 4 `l 1 i 4 0 `d 1 f 4 0 `S681 1 fAsBytes 4 0 `S686 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S689  1 a 4 62 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 56 ]
+[s S758 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S761 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S758 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S761  1 a 2 66 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 61 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 60 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 55 ]
+"8
+[v ___flmul@b b `d  1 p 4 42 ]
+[v ___flmul@a a `d  1 p 4 46 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 36 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 29 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 34 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 41 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 40 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 33 ]
+"8
+[v ___fldiv@a a `d  1 p 4 16 ]
+[v ___fldiv@b b `d  1 p 4 20 ]
+"185
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"116 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\LCD.c
+[v _LCD_String_xy LCD_String_xy `(v  1 e 1 0 ]
+{
+[v LCD_String_xy@row row `uc  1 a 1 wreg ]
+"118
+[v LCD_String_xy@location location `uc  1 a 1 9 ]
+"116
+[v LCD_String_xy@row row `uc  1 a 1 wreg ]
+[v LCD_String_xy@pos pos `uc  1 p 1 5 ]
+[v LCD_String_xy@msg msg `*.24DCuc  1 p 1 6 ]
+[v LCD_String_xy@row row `uc  1 a 1 8 ]
+"133
+} 0
+"106
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+{
+[v LCD_String@msg msg `*.26DCuc  1 p 2 3 ]
+"113
+} 0
+"91
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+{
+[v LCD_Char@dat dat `uc  1 a 1 wreg ]
+[v LCD_Char@dat dat `uc  1 a 1 wreg ]
+"93
+[v LCD_Char@dat dat `uc  1 a 1 2 ]
+"104
+} 0
+"38
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"47
+} 0
+"147
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"151
+} 0
+"62
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+"64
+[v LCD_Command@cmd cmd `uc  1 a 1 2 ]
+"75
+} 0
+"21 D:\Bases para la U\U 2022-2\digitales\vidasad\lucesproject.X\adc.c
+[v _ADC_Read ADC_Read `(i  1 e 2 0 ]
+{
+"23
+[v ADC_Read@digital digital `i  1 a 2 5 ]
+"21
+[v ADC_Read@channel channel `i  1 p 2 0 ]
+"35
+} 0
+"5
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"19
+} 0

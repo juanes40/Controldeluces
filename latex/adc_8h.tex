@@ -1,0 +1,72 @@
+\hypertarget{adc_8h}{}\doxysection{Referencia del Archivo adc.\+h}
+\label{adc_8h}\index{adc.h@{adc.h}}
+
+
+Hace toda la conversion.  
+
+
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{adc_8h_a5137b551f1b83b0f4d8df7d071a3d3a6}{ADC\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em ADC\+\_\+\+Init inicializar el conversor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{adc_8h_a0956d897f99afd96d0a3d3d697b67d22}{ADC\+\_\+\+Read}} (int channel)
+\begin{DoxyCompactList}\small\item\em ADC\+\_\+\+Read Lee la entrada y la convierte a digital. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Hace toda la conversion. 
+
+\begin{DoxyVersion}{Versión}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+10/02/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Juanesand\+Marcela @title Conversor Analogico-\/digital 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \mbox{\hyperlink{adc_8c_a5137b551f1b83b0f4d8df7d071a3d3a6}{ADC\_Init}}(\textcolor{keywordtype}{void})\{}
+\DoxyCodeLine{\ \ \ \ TRISA0\ =\ 1;}
+\DoxyCodeLine{\ \}}
+
+\end{DoxyCode}
+ 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{adc_8h_a5137b551f1b83b0f4d8df7d071a3d3a6}\label{adc_8h_a5137b551f1b83b0f4d8df7d071a3d3a6}} 
+\index{adc.h@{adc.h}!ADC\_Init@{ADC\_Init}}
+\index{ADC\_Init@{ADC\_Init}!adc.h@{adc.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_Init()}{ADC\_Init()}}
+{\footnotesize\ttfamily void ADC\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ADC\+\_\+\+Init inicializar el conversor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{adc_8h_a0956d897f99afd96d0a3d3d697b67d22}\label{adc_8h_a0956d897f99afd96d0a3d3d697b67d22}} 
+\index{adc.h@{adc.h}!ADC\_Read@{ADC\_Read}}
+\index{ADC\_Read@{ADC\_Read}!adc.h@{adc.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_Read()}{ADC\_Read()}}
+{\footnotesize\ttfamily int ADC\+\_\+\+Read (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+
+ADC\+\_\+\+Read Lee la entrada y la convierte a digital. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em channel} & Canal de entrada, salida del sensor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor del convertido entero entre 0 y 1023 
+\end{DoxyReturn}

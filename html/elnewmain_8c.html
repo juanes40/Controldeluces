@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Controldeluz: Referencia del Archivo elnewmain.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logodoc.jpeg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Controldeluz<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Controlar la cantidad de iluminusidad que emiten las lamparas dependiendo de la cantidad de luz ambiente y de la presencia de personas en la habitacion</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo elnewmain.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;xc.h&gt;</code><br />
+<code>#include &lt;pic16f887.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_c_o_n_f_i_g_8h_source.html">CONFIG.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_c_d_8h_source.html">LCD.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart_8h_source.html">uart.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ad54a382b0a87220a8394be9dde597812"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#ad54a382b0a87220a8394be9dde597812">TMR2PRESCALE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ad54a382b0a87220a8394be9dde597812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024148e99a7143db044a48216664d03d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a024148e99a7143db044a48216664d03d">_XTAL_FREQ</a>&#160;&#160;&#160;8000000</td></tr>
+<tr class="separator:a024148e99a7143db044a48216664d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a0fcaec01a121c9b1e38cf27d424871b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a0fcaec01a121c9b1e38cf27d424871b9">PWM_Inicializar</a> ()</td></tr>
+<tr class="separator:a0fcaec01a121c9b1e38cf27d424871b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217b23fb2f3cf6b339586f35bf7e3282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a217b23fb2f3cf6b339586f35bf7e3282">PWM_Duty</a> (unsigned int duty)</td></tr>
+<tr class="separator:a217b23fb2f3cf6b339586f35bf7e3282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8786829ff995bc9e7e971d62f13bac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#ab8786829ff995bc9e7e971d62f13bac2">PWM_Inicializar2</a> ()</td></tr>
+<tr class="separator:ab8786829ff995bc9e7e971d62f13bac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16182d7ad7b199a5fe6bce7a05725a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#ab16182d7ad7b199a5fe6bce7a05725a8">PWM_Duty2</a> (unsigned int duty)</td></tr>
+<tr class="separator:ab16182d7ad7b199a5fe6bce7a05725a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+<tr class="separator:acdef7a1fd863a6d3770c1268cb06add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae269899a408c67c3c75ee0a9d95dc3c5"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#ae269899a408c67c3c75ee0a9d95dc3c5">idx</a> = 0</td></tr>
+<tr class="separator:ae269899a408c67c3c75ee0a9d95dc3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57c95b4970da1840304db319f584c36"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#af57c95b4970da1840304db319f584c36">luz</a> [4]</td></tr>
+<tr class="separator:af57c95b4970da1840304db319f584c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3d6c661377b1442aa9de46fd1ee810"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a1f3d6c661377b1442aa9de46fd1ee810">sensorSalida1</a> [3]</td></tr>
+<tr class="separator:a1f3d6c661377b1442aa9de46fd1ee810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8267c53cd10495564c2d3b7f7205e81e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a8267c53cd10495564c2d3b7f7205e81e">sensorSalida2</a> [3]</td></tr>
+<tr class="separator:a8267c53cd10495564c2d3b7f7205e81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9959a2c6c9c45e8bdaf38290357a14"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#aaf9959a2c6c9c45e8bdaf38290357a14">Fila1</a> [16]</td></tr>
+<tr class="separator:aaf9959a2c6c9c45e8bdaf38290357a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fb4c936c2b1120b2f4e4cbf6ebdee5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#af3fb4c936c2b1120b2f4e4cbf6ebdee5">Fila2</a> [16]</td></tr>
+<tr class="separator:af3fb4c936c2b1120b2f4e4cbf6ebdee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f345b0c5b17d31bc3c8e28b327f685b"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a5f345b0c5b17d31bc3c8e28b327f685b">sensorLuz</a></td></tr>
+<tr class="separator:a5f345b0c5b17d31bc3c8e28b327f685b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5fdf0508120b67938868172541ad41"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a2d5fdf0508120b67938868172541ad41">pwmFrecuencia</a> = 5000</td></tr>
+<tr class="separator:a2d5fdf0508120b67938868172541ad41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305abbdf69582729da817cdd588a201d"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a305abbdf69582729da817cdd588a201d">bloque1</a></td></tr>
+<tr class="separator:a305abbdf69582729da817cdd588a201d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d1d0eb9ffde5d51f5d44a9c4735439"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a15d1d0eb9ffde5d51f5d44a9c4735439">bloque2</a></td></tr>
+<tr class="separator:a15d1d0eb9ffde5d51f5d44a9c4735439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c926b12186b6e94211d7c1408ff4af8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elnewmain_8c.html#a4c926b12186b6e94211d7c1408ff4af8">stringBT</a> [50]</td></tr>
+<tr class="separator:a4c926b12186b6e94211d7c1408ff4af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a024148e99a7143db044a48216664d03d" name="a024148e99a7143db044a48216664d03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024148e99a7143db044a48216664d03d">&#9670;&#160;</a></span>_XTAL_FREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _XTAL_FREQ&#160;&#160;&#160;8000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad54a382b0a87220a8394be9dde597812" name="ad54a382b0a87220a8394be9dde597812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54a382b0a87220a8394be9dde597812">&#9670;&#160;</a></span>TMR2PRESCALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TMR2PRESCALE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a217b23fb2f3cf6b339586f35bf7e3282" name="a217b23fb2f3cf6b339586f35bf7e3282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217b23fb2f3cf6b339586f35bf7e3282">&#9670;&#160;</a></span>PWM_Duty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PWM_Duty </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>duty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab16182d7ad7b199a5fe6bce7a05725a8" name="ab16182d7ad7b199a5fe6bce7a05725a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16182d7ad7b199a5fe6bce7a05725a8">&#9670;&#160;</a></span>PWM_Duty2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PWM_Duty2 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>duty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fcaec01a121c9b1e38cf27d424871b9" name="a0fcaec01a121c9b1e38cf27d424871b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcaec01a121c9b1e38cf27d424871b9">&#9670;&#160;</a></span>PWM_Inicializar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PWM_Inicializar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8786829ff995bc9e7e971d62f13bac2" name="ab8786829ff995bc9e7e971d62f13bac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8786829ff995bc9e7e971d62f13bac2">&#9670;&#160;</a></span>PWM_Inicializar2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PWM_Inicializar2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a305abbdf69582729da817cdd588a201d" name="a305abbdf69582729da817cdd588a201d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305abbdf69582729da817cdd588a201d">&#9670;&#160;</a></span>bloque1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long bloque1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d1d0eb9ffde5d51f5d44a9c4735439" name="a15d1d0eb9ffde5d51f5d44a9c4735439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d1d0eb9ffde5d51f5d44a9c4735439">&#9670;&#160;</a></span>bloque2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long bloque2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf9959a2c6c9c45e8bdaf38290357a14" name="aaf9959a2c6c9c45e8bdaf38290357a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9959a2c6c9c45e8bdaf38290357a14">&#9670;&#160;</a></span>Fila1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Fila1[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3fb4c936c2b1120b2f4e4cbf6ebdee5" name="af3fb4c936c2b1120b2f4e4cbf6ebdee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fb4c936c2b1120b2f4e4cbf6ebdee5">&#9670;&#160;</a></span>Fila2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Fila2[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae269899a408c67c3c75ee0a9d95dc3c5" name="ae269899a408c67c3c75ee0a9d95dc3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae269899a408c67c3c75ee0a9d95dc3c5">&#9670;&#160;</a></span>idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char idx = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af57c95b4970da1840304db319f584c36" name="af57c95b4970da1840304db319f584c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57c95b4970da1840304db319f584c36">&#9670;&#160;</a></span>luz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char luz[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d5fdf0508120b67938868172541ad41" name="a2d5fdf0508120b67938868172541ad41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5fdf0508120b67938868172541ad41">&#9670;&#160;</a></span>pwmFrecuencia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long pwmFrecuencia = 5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f345b0c5b17d31bc3c8e28b327f685b" name="a5f345b0c5b17d31bc3c8e28b327f685b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f345b0c5b17d31bc3c8e28b327f685b">&#9670;&#160;</a></span>sensorLuz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long sensorLuz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f3d6c661377b1442aa9de46fd1ee810" name="a1f3d6c661377b1442aa9de46fd1ee810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3d6c661377b1442aa9de46fd1ee810">&#9670;&#160;</a></span>sensorSalida1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char sensorSalida1[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8267c53cd10495564c2d3b7f7205e81e" name="a8267c53cd10495564c2d3b7f7205e81e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8267c53cd10495564c2d3b7f7205e81e">&#9670;&#160;</a></span>sensorSalida2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char sensorSalida2[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c926b12186b6e94211d7c1408ff4af8" name="a4c926b12186b6e94211d7c1408ff4af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c926b12186b6e94211d7c1408ff4af8">&#9670;&#160;</a></span>stringBT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char stringBT[50]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

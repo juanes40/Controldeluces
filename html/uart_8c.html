@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Controldeluz: Referencia del Archivo uart.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logodoc.jpeg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Controldeluz<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Controlar la cantidad de iluminusidad que emiten las lamparas dependiendo de la cantidad de luz ambiente y de la presencia de personas en la habitacion</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo uart.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_c_o_n_f_i_g_8h_source.html">CONFIG.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart_8h_source.html">uart.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:afb4b88e1987584afc1fa235f899852c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#afb4b88e1987584afc1fa235f899852c3">USART_Init</a> (long baud_rate)</td></tr>
+<tr class="memdesc:afb4b88e1987584afc1fa235f899852c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">USART_Init Asigna los pines para la comunicacion serial.  <br /></td></tr>
+<tr class="separator:afb4b88e1987584afc1fa235f899852c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5781762c2fa78c52aba00675722069c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#ac5781762c2fa78c52aba00675722069c">USART_TxChar</a> (char out)</td></tr>
+<tr class="memdesc:ac5781762c2fa78c52aba00675722069c"><td class="mdescLeft">&#160;</td><td class="mdescRight">USART_TxChar Transmitir los datos al receptor.  <br /></td></tr>
+<tr class="separator:ac5781762c2fa78c52aba00675722069c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600231bce9ac71e7b6408b801e4516e7"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#a600231bce9ac71e7b6408b801e4516e7">USART_RxChar</a> ()</td></tr>
+<tr class="memdesc:a600231bce9ac71e7b6408b801e4516e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">USART_RxChar Se usa para guardar el registro enviado por el transmisor.  <br /></td></tr>
+<tr class="separator:a600231bce9ac71e7b6408b801e4516e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e70f3887da174491e3ac3ec22573e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart_8c.html#ae1e70f3887da174491e3ac3ec22573e9">USART_SendString</a> (const char *out)</td></tr>
+<tr class="memdesc:ae1e70f3887da174491e3ac3ec22573e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">USART_SendString Envia el mensaje entre el receptor y el transmisor.  <br /></td></tr>
+<tr class="separator:ae1e70f3887da174491e3ac3ec22573e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="afb4b88e1987584afc1fa235f899852c3" name="afb4b88e1987584afc1fa235f899852c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4b88e1987584afc1fa235f899852c3">&#9670;&#160;</a></span>USART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART_Init </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>baud_rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USART_Init Asigna los pines para la comunicacion serial. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baud_rate</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a600231bce9ac71e7b6408b801e4516e7" name="a600231bce9ac71e7b6408b801e4516e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600231bce9ac71e7b6408b801e4516e7">&#9670;&#160;</a></span>USART_RxChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char USART_RxChar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USART_RxChar Se usa para guardar el registro enviado por el transmisor. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Retorna una variable que recibe los datos. </dd></dl>
+
+</div>
+</div>
+<a id="ae1e70f3887da174491e3ac3ec22573e9" name="ae1e70f3887da174491e3ac3ec22573e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e70f3887da174491e3ac3ec22573e9">&#9670;&#160;</a></span>USART_SendString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART_SendString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USART_SendString Envia el mensaje entre el receptor y el transmisor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*out</td><td>Cadena a enviar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac5781762c2fa78c52aba00675722069c" name="ac5781762c2fa78c52aba00675722069c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5781762c2fa78c52aba00675722069c">&#9670;&#160;</a></span>USART_TxChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART_TxChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USART_TxChar Transmitir los datos al receptor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>variable de salida para la transmision de el caracter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

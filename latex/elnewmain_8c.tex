@@ -1,0 +1,173 @@
+\hypertarget{elnewmain_8c}{}\doxysection{Referencia del Archivo elnewmain.\+c}
+\label{elnewmain_8c}\index{elnewmain.c@{elnewmain.c}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$pic16f887.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}CONFIG.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{elnewmain_8c_ad54a382b0a87220a8394be9dde597812}{TMR2\+PRESCALE}}~4
+\item 
+\#define \mbox{\hyperlink{elnewmain_8c_a024148e99a7143db044a48216664d03d}{\+\_\+\+XTAL\+\_\+\+FREQ}}~8000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{elnewmain_8c_a0fcaec01a121c9b1e38cf27d424871b9}{PWM\+\_\+\+Inicializar}} ()
+\item 
+\mbox{\hyperlink{elnewmain_8c_a217b23fb2f3cf6b339586f35bf7e3282}{PWM\+\_\+\+Duty}} (unsigned int duty)
+\item 
+\mbox{\hyperlink{elnewmain_8c_ab8786829ff995bc9e7e971d62f13bac2}{PWM\+\_\+\+Inicializar2}} ()
+\item 
+\mbox{\hyperlink{elnewmain_8c_ab16182d7ad7b199a5fe6bce7a05725a8}{PWM\+\_\+\+Duty2}} (unsigned int duty)
+\item 
+void \mbox{\hyperlink{elnewmain_8c_acdef7a1fd863a6d3770c1268cb06add3}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{elnewmain_8c_ae269899a408c67c3c75ee0a9d95dc3c5}{idx}} = 0
+\item 
+char \mbox{\hyperlink{elnewmain_8c_af57c95b4970da1840304db319f584c36}{luz}} \mbox{[}4\mbox{]}
+\item 
+char \mbox{\hyperlink{elnewmain_8c_a1f3d6c661377b1442aa9de46fd1ee810}{sensor\+Salida1}} \mbox{[}3\mbox{]}
+\item 
+char \mbox{\hyperlink{elnewmain_8c_a8267c53cd10495564c2d3b7f7205e81e}{sensor\+Salida2}} \mbox{[}3\mbox{]}
+\item 
+char \mbox{\hyperlink{elnewmain_8c_aaf9959a2c6c9c45e8bdaf38290357a14}{Fila1}} \mbox{[}16\mbox{]}
+\item 
+char \mbox{\hyperlink{elnewmain_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}{Fila2}} \mbox{[}16\mbox{]}
+\item 
+long \mbox{\hyperlink{elnewmain_8c_a5f345b0c5b17d31bc3c8e28b327f685b}{sensor\+Luz}}
+\item 
+long \mbox{\hyperlink{elnewmain_8c_a2d5fdf0508120b67938868172541ad41}{pwm\+Frecuencia}} = 5000
+\item 
+long \mbox{\hyperlink{elnewmain_8c_a305abbdf69582729da817cdd588a201d}{bloque1}}
+\item 
+long \mbox{\hyperlink{elnewmain_8c_a15d1d0eb9ffde5d51f5d44a9c4735439}{bloque2}}
+\item 
+char \mbox{\hyperlink{elnewmain_8c_a4c926b12186b6e94211d7c1408ff4af8}{string\+BT}} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{elnewmain_8c_a024148e99a7143db044a48216664d03d}\label{elnewmain_8c_a024148e99a7143db044a48216664d03d}} 
+\index{elnewmain.c@{elnewmain.c}!\_XTAL\_FREQ@{\_XTAL\_FREQ}}
+\index{\_XTAL\_FREQ@{\_XTAL\_FREQ}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{\_XTAL\_FREQ}{\_XTAL\_FREQ}}
+{\footnotesize\ttfamily \#define \+\_\+\+XTAL\+\_\+\+FREQ~8000000}
+
+\mbox{\Hypertarget{elnewmain_8c_ad54a382b0a87220a8394be9dde597812}\label{elnewmain_8c_ad54a382b0a87220a8394be9dde597812}} 
+\index{elnewmain.c@{elnewmain.c}!TMR2PRESCALE@{TMR2PRESCALE}}
+\index{TMR2PRESCALE@{TMR2PRESCALE}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{TMR2PRESCALE}{TMR2PRESCALE}}
+{\footnotesize\ttfamily \#define TMR2\+PRESCALE~4}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{elnewmain_8c_acdef7a1fd863a6d3770c1268cb06add3}\label{elnewmain_8c_acdef7a1fd863a6d3770c1268cb06add3}} 
+\index{elnewmain.c@{elnewmain.c}!main@{main}}
+\index{main@{main}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{elnewmain_8c_a217b23fb2f3cf6b339586f35bf7e3282}\label{elnewmain_8c_a217b23fb2f3cf6b339586f35bf7e3282}} 
+\index{elnewmain.c@{elnewmain.c}!PWM\_Duty@{PWM\_Duty}}
+\index{PWM\_Duty@{PWM\_Duty}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_Duty()}{PWM\_Duty()}}
+{\footnotesize\ttfamily PWM\+\_\+\+Duty (\begin{DoxyParamCaption}\item[{unsigned int}]{duty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{elnewmain_8c_ab16182d7ad7b199a5fe6bce7a05725a8}\label{elnewmain_8c_ab16182d7ad7b199a5fe6bce7a05725a8}} 
+\index{elnewmain.c@{elnewmain.c}!PWM\_Duty2@{PWM\_Duty2}}
+\index{PWM\_Duty2@{PWM\_Duty2}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_Duty2()}{PWM\_Duty2()}}
+{\footnotesize\ttfamily PWM\+\_\+\+Duty2 (\begin{DoxyParamCaption}\item[{unsigned int}]{duty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{elnewmain_8c_a0fcaec01a121c9b1e38cf27d424871b9}\label{elnewmain_8c_a0fcaec01a121c9b1e38cf27d424871b9}} 
+\index{elnewmain.c@{elnewmain.c}!PWM\_Inicializar@{PWM\_Inicializar}}
+\index{PWM\_Inicializar@{PWM\_Inicializar}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_Inicializar()}{PWM\_Inicializar()}}
+{\footnotesize\ttfamily PWM\+\_\+\+Inicializar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{elnewmain_8c_ab8786829ff995bc9e7e971d62f13bac2}\label{elnewmain_8c_ab8786829ff995bc9e7e971d62f13bac2}} 
+\index{elnewmain.c@{elnewmain.c}!PWM\_Inicializar2@{PWM\_Inicializar2}}
+\index{PWM\_Inicializar2@{PWM\_Inicializar2}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_Inicializar2()}{PWM\_Inicializar2()}}
+{\footnotesize\ttfamily PWM\+\_\+\+Inicializar2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{elnewmain_8c_a305abbdf69582729da817cdd588a201d}\label{elnewmain_8c_a305abbdf69582729da817cdd588a201d}} 
+\index{elnewmain.c@{elnewmain.c}!bloque1@{bloque1}}
+\index{bloque1@{bloque1}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{bloque1}{bloque1}}
+{\footnotesize\ttfamily long bloque1}
+
+\mbox{\Hypertarget{elnewmain_8c_a15d1d0eb9ffde5d51f5d44a9c4735439}\label{elnewmain_8c_a15d1d0eb9ffde5d51f5d44a9c4735439}} 
+\index{elnewmain.c@{elnewmain.c}!bloque2@{bloque2}}
+\index{bloque2@{bloque2}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{bloque2}{bloque2}}
+{\footnotesize\ttfamily long bloque2}
+
+\mbox{\Hypertarget{elnewmain_8c_aaf9959a2c6c9c45e8bdaf38290357a14}\label{elnewmain_8c_aaf9959a2c6c9c45e8bdaf38290357a14}} 
+\index{elnewmain.c@{elnewmain.c}!Fila1@{Fila1}}
+\index{Fila1@{Fila1}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{Fila1}{Fila1}}
+{\footnotesize\ttfamily char Fila1\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{elnewmain_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}\label{elnewmain_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}} 
+\index{elnewmain.c@{elnewmain.c}!Fila2@{Fila2}}
+\index{Fila2@{Fila2}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{Fila2}{Fila2}}
+{\footnotesize\ttfamily char Fila2\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{elnewmain_8c_ae269899a408c67c3c75ee0a9d95dc3c5}\label{elnewmain_8c_ae269899a408c67c3c75ee0a9d95dc3c5}} 
+\index{elnewmain.c@{elnewmain.c}!idx@{idx}}
+\index{idx@{idx}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{idx}{idx}}
+{\footnotesize\ttfamily unsigned char idx = 0}
+
+\mbox{\Hypertarget{elnewmain_8c_af57c95b4970da1840304db319f584c36}\label{elnewmain_8c_af57c95b4970da1840304db319f584c36}} 
+\index{elnewmain.c@{elnewmain.c}!luz@{luz}}
+\index{luz@{luz}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{luz}{luz}}
+{\footnotesize\ttfamily char luz\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{elnewmain_8c_a2d5fdf0508120b67938868172541ad41}\label{elnewmain_8c_a2d5fdf0508120b67938868172541ad41}} 
+\index{elnewmain.c@{elnewmain.c}!pwmFrecuencia@{pwmFrecuencia}}
+\index{pwmFrecuencia@{pwmFrecuencia}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{pwmFrecuencia}{pwmFrecuencia}}
+{\footnotesize\ttfamily long pwm\+Frecuencia = 5000}
+
+\mbox{\Hypertarget{elnewmain_8c_a5f345b0c5b17d31bc3c8e28b327f685b}\label{elnewmain_8c_a5f345b0c5b17d31bc3c8e28b327f685b}} 
+\index{elnewmain.c@{elnewmain.c}!sensorLuz@{sensorLuz}}
+\index{sensorLuz@{sensorLuz}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{sensorLuz}{sensorLuz}}
+{\footnotesize\ttfamily long sensor\+Luz}
+
+\mbox{\Hypertarget{elnewmain_8c_a1f3d6c661377b1442aa9de46fd1ee810}\label{elnewmain_8c_a1f3d6c661377b1442aa9de46fd1ee810}} 
+\index{elnewmain.c@{elnewmain.c}!sensorSalida1@{sensorSalida1}}
+\index{sensorSalida1@{sensorSalida1}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{sensorSalida1}{sensorSalida1}}
+{\footnotesize\ttfamily char sensor\+Salida1\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{elnewmain_8c_a8267c53cd10495564c2d3b7f7205e81e}\label{elnewmain_8c_a8267c53cd10495564c2d3b7f7205e81e}} 
+\index{elnewmain.c@{elnewmain.c}!sensorSalida2@{sensorSalida2}}
+\index{sensorSalida2@{sensorSalida2}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{sensorSalida2}{sensorSalida2}}
+{\footnotesize\ttfamily char sensor\+Salida2\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{elnewmain_8c_a4c926b12186b6e94211d7c1408ff4af8}\label{elnewmain_8c_a4c926b12186b6e94211d7c1408ff4af8}} 
+\index{elnewmain.c@{elnewmain.c}!stringBT@{stringBT}}
+\index{stringBT@{stringBT}!elnewmain.c@{elnewmain.c}}
+\doxysubsubsection{\texorpdfstring{stringBT}{stringBT}}
+{\footnotesize\ttfamily char string\+BT\mbox{[}50\mbox{]}}
+

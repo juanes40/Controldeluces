@@ -1,0 +1,40 @@
+\hypertarget{uart_8h_source}{}\doxysection{uart.\+h}
+\mbox{\hyperlink{uart_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ File:\ \ \ uart.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Author:\ Logicos}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Created\ on\ 26\ de\ enero\ de\ 2023,\ 10:52\ AM}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#ifndef\ UART\_H}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ UART\_H}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00026\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <pic16f887.h>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <xc.h>}}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}{USART\_Init}}(\textcolor{keywordtype}{long});}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}{USART\_TxChar}}(\textcolor{keywordtype}{char});}
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}{USART\_SendString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *);}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{uart_8h_a600231bce9ac71e7b6408b801e4516e7}{USART\_RxChar}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ F\_CPU\ 8000000/64}}
+\DoxyCodeLine{00053\ \textcolor{comment}{//\#define\ Baud\_value(baud\_rate)\ (((float)(F\_CPU)/(float)baud\_rate)-\/1)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ Baud\_value\ (((float)(F\_CPU)/(float)baud\_rate)-\/1)}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00060\ \}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ UART\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+
+\end{DoxyCode}

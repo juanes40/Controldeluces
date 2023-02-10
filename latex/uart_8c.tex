@@ -1,0 +1,76 @@
+\hypertarget{uart_8c}{}\doxysection{Referencia del Archivo uart.\+c}
+\label{uart_8c}\index{uart.c@{uart.c}}
+{\ttfamily \#include \char`\"{}CONFIG.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8c_afb4b88e1987584afc1fa235f899852c3}{USART\+\_\+\+Init}} (long baud\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Init Asigna los pines para la comunicacion serial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8c_ac5781762c2fa78c52aba00675722069c}{USART\+\_\+\+Tx\+Char}} (char out)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Tx\+Char Transmitir los datos al receptor. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{uart_8c_a600231bce9ac71e7b6408b801e4516e7}{USART\+\_\+\+Rx\+Char}} ()
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Rx\+Char Se usa para guardar el registro enviado por el transmisor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8c_ae1e70f3887da174491e3ac3ec22573e9}{USART\+\_\+\+Send\+String}} (const char $\ast$out)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Send\+String Envia el mensaje entre el receptor y el transmisor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{uart_8c_afb4b88e1987584afc1fa235f899852c3}\label{uart_8c_afb4b88e1987584afc1fa235f899852c3}} 
+\index{uart.c@{uart.c}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{long}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Init Asigna los pines para la comunicacion serial. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em baud\+\_\+rate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_a600231bce9ac71e7b6408b801e4516e7}\label{uart_8c_a600231bce9ac71e7b6408b801e4516e7}} 
+\index{uart.c@{uart.c}!USART\_RxChar@{USART\_RxChar}}
+\index{USART\_RxChar@{USART\_RxChar}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_RxChar()}{USART\_RxChar()}}
+{\footnotesize\ttfamily char USART\+\_\+\+Rx\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Rx\+Char Se usa para guardar el registro enviado por el transmisor. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna una variable que recibe los datos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{uart_8c_ae1e70f3887da174491e3ac3ec22573e9}\label{uart_8c_ae1e70f3887da174491e3ac3ec22573e9}} 
+\index{uart.c@{uart.c}!USART\_SendString@{USART\_SendString}}
+\index{USART\_SendString@{USART\_SendString}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_SendString()}{USART\_SendString()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Send\+String Envia el mensaje entre el receptor y el transmisor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $\ast$out} & Cadena a enviar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8c_ac5781762c2fa78c52aba00675722069c}\label{uart_8c_ac5781762c2fa78c52aba00675722069c}} 
+\index{uart.c@{uart.c}!USART\_TxChar@{USART\_TxChar}}
+\index{USART\_TxChar@{USART\_TxChar}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_TxChar()}{USART\_TxChar()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Tx\+Char (\begin{DoxyParamCaption}\item[{char}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Tx\+Char Transmitir los datos al receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & variable de salida para la transmision de el caracter \\
+\hline
+\end{DoxyParams}

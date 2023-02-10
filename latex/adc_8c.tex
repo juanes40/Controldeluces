@@ -1,0 +1,47 @@
+\hypertarget{adc_8c}{}\doxysection{Referencia del Archivo adc.\+c}
+\label{adc_8c}\index{adc.c@{adc.c}}
+{\ttfamily \#include \char`\"{}adc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{adc_8c_a5137b551f1b83b0f4d8df7d071a3d3a6}{ADC\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em ADC\+\_\+\+Init inicializar el conversor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{adc_8c_a0956d897f99afd96d0a3d3d697b67d22}{ADC\+\_\+\+Read}} (int channel)
+\begin{DoxyCompactList}\small\item\em ADC\+\_\+\+Read Lee la entrada y la convierte a digital. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{adc_8c_a5137b551f1b83b0f4d8df7d071a3d3a6}\label{adc_8c_a5137b551f1b83b0f4d8df7d071a3d3a6}} 
+\index{adc.c@{adc.c}!ADC\_Init@{ADC\_Init}}
+\index{ADC\_Init@{ADC\_Init}!adc.c@{adc.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Init()}{ADC\_Init()}}
+{\footnotesize\ttfamily void ADC\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ADC\+\_\+\+Init inicializar el conversor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{adc_8c_a0956d897f99afd96d0a3d3d697b67d22}\label{adc_8c_a0956d897f99afd96d0a3d3d697b67d22}} 
+\index{adc.c@{adc.c}!ADC\_Read@{ADC\_Read}}
+\index{ADC\_Read@{ADC\_Read}!adc.c@{adc.c}}
+\doxysubsubsection{\texorpdfstring{ADC\_Read()}{ADC\_Read()}}
+{\footnotesize\ttfamily int ADC\+\_\+\+Read (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+
+ADC\+\_\+\+Read Lee la entrada y la convierte a digital. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em channel} & Canal de entrada, salida del sensor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El valor del convertido entero entre 0 y 1023 
+\end{DoxyReturn}

@@ -1,0 +1,124 @@
+\hypertarget{uart_8h}{}\doxysection{Referencia del Archivo uart.\+h}
+\label{uart_8h}\index{uart.h@{uart.h}}
+
+
+Es para transmitir ,recibir, enviar cadena e inicializar el serial.  
+
+
+{\ttfamily \#include $<$pic16f887.\+h$>$}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~8000000/64
+\item 
+\#define \mbox{\hyperlink{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}{Baud\+\_\+value}}~(((float)(\mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}{USART\+\_\+\+Init}} (long)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Init Asigna los pines para la comunicacion serial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}{USART\+\_\+\+Tx\+Char}} (char)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Tx\+Char Transmitir los datos al receptor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}{USART\+\_\+\+Send\+String}} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Send\+String Envia el mensaje entre el receptor y el transmisor. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{uart_8h_a600231bce9ac71e7b6408b801e4516e7}{USART\+\_\+\+Rx\+Char}} ()
+\begin{DoxyCompactList}\small\item\em USART\+\_\+\+Rx\+Char Se usa para guardar el registro enviado por el transmisor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Es para transmitir ,recibir, enviar cadena e inicializar el serial. 
+
+\begin{DoxyVersion}{Versión}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Fecha}
+10/02/2023 @title Salida para usar el serial 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \mbox{\hyperlink{uart_8c_ac5781762c2fa78c52aba00675722069c}{USART\_TxChar}}(\textcolor{keywordtype}{char}\ out)\{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}(TXIF==0);\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ TXREG=out;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}\label{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}} 
+\index{uart.h@{uart.h}!Baud\_value@{Baud\_value}}
+\index{Baud\_value@{Baud\_value}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{Baud\_value}{Baud\_value}}
+{\footnotesize\ttfamily \#define Baud\+\_\+value~(((float)(\mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)}
+
+\mbox{\Hypertarget{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}\label{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{uart.h@{uart.h}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~8000000/64}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}\label{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}} 
+\index{uart.h@{uart.h}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{long}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Init Asigna los pines para la comunicacion serial. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em baud\+\_\+rate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8h_a600231bce9ac71e7b6408b801e4516e7}\label{uart_8h_a600231bce9ac71e7b6408b801e4516e7}} 
+\index{uart.h@{uart.h}!USART\_RxChar@{USART\_RxChar}}
+\index{USART\_RxChar@{USART\_RxChar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_RxChar()}{USART\_RxChar()}}
+{\footnotesize\ttfamily char USART\+\_\+\+Rx\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Rx\+Char Se usa para guardar el registro enviado por el transmisor. 
+
+\begin{DoxyReturn}{Devuelve}
+Retorna una variable que recibe los datos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}\label{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}} 
+\index{uart.h@{uart.h}!USART\_SendString@{USART\_SendString}}
+\index{USART\_SendString@{USART\_SendString}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SendString()}{USART\_SendString()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Send\+String Envia el mensaje entre el receptor y el transmisor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $\ast$out} & Cadena a enviar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}\label{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}} 
+\index{uart.h@{uart.h}!USART\_TxChar@{USART\_TxChar}}
+\index{USART\_TxChar@{USART\_TxChar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_TxChar()}{USART\_TxChar()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Tx\+Char (\begin{DoxyParamCaption}\item[{char}]{out }\end{DoxyParamCaption})}
+
+
+
+USART\+\_\+\+Tx\+Char Transmitir los datos al receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & variable de salida para la transmision de el caracter \\
+\hline
+\end{DoxyParams}
